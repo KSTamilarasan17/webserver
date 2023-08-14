@@ -27,6 +27,7 @@ Serving the HTML pages.
 Testing the webserver
 
 ## PROGRAM:
+```py
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
 content='''
@@ -41,7 +42,7 @@ content='''
 <h2>2. MEAN Stack</h2>
 <h2>3. React </h2>
 <h2>4. apachee</h2>
-<h2>5. lighttpx</h2>	
+<h2>5. lighttpx</h2>
 </body>
 </html>
 '''
@@ -58,6 +59,7 @@ print("This is my webserver")
 server_address =('',8000)
 httpd = HTTPServer(server_address,MyServer)
 httpd.serve_forever()
+```
 
 ## OUTPUT:
 ### client output:
